@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lab 3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #97d2c6;
+}
+
+/* NAVBAR */
+header {
+  background: #333;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 16px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* GRID – FULL WIDTH */
+.grid {
+  display: grid;
+  grid-template-columns: 35% 45% 20%;
+  grid-template-rows: 180px auto;
+  width: 100vw;   /* FULL PAGE WIDTH */
+}
+
+/* IMAGES */
+.grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* GRID AREAS */
+.left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.middle {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.right {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+/* TEXT BLOCK – LIGHTER GREY (PROF STYLE) */
+.text {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  background: #7e969d;   /* lighter grey */
+  color: #f2f2f2;
+  padding: 18px;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+    </div>
+    <div>
+      <a href="#">Login</a>
+      <a href="#">Sign Up</a>
+    </div>
+  </nav>
+</header>
+
+<div class="grid">
+
+  <!-- LEFT IMAGE -->
+  <img class="left"
+    src="picss/rocket.png"
+    alt="Rocket">
+
+  <!-- TOP MIDDLE IMAGE -->
+  <img class="middle"
+    src="picss/solars ystem.png"
+    alt="Solar System">
+
+  <!-- TOP RIGHT IMAGE -->
+  <img class="right"
+    src="picss/satelite robot.png"
+    alt="Rover">
+
+  
+  <div class="text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam soluta deserunt iste maiores incidunt, nulla exercitationem praesentium temporibus ratione tempore officiis nihil? Eum aliquid esse magni aut repellat ex nulla cupiditate, dolore accusamus illum pariatur dolor id fugit et harum soluta fugiat explicabo placeat consectetur maiores tenetur sint quam eligendi impedit? Asperiores minima rerum voluptatum, error beatae quibusdam optio quas et commodi voluptatibus id reprehenderit officia sed inventore, ullam sint neque expedita. Aut aliquid optio sed eaque quae, qui quas sunt deleniti delectus ducimus, voluptatem odit. Voluptate tempora id a, soluta culpa eveniet ad ducimus perferendis assumenda libero quam dolore cum fuga nam nostrum? Doloribus esse, vero fugiat laboriosam odit odio animi amet tempore reprehenderit repellat laudantium magnam! Dolorem, in laudantium nesciunt facilis perferendis minus laboriosam facere nobis voluptate harum accusamus odio beatae voluptas velit, quisquam omnis vitae nemo earum. Temporibus inventore, autem nostrum praesentium fuga error molestiae cupiditate vitae sapiente dicta repellat aliquam deleniti sit assumenda amet omnis saepe nulla et eius voluptas molestias eos! Facere eos ea obcaecati illum ipsum nisi, placeat reprehenderit voluptate maiores laboriosam voluptatibus culpa facilis soluta earum veritatis quos eum debitis aliquid, amet id labore cupiditate dignissimos dolor. Libero nemo ut culpa accusantium dolores.</p>
+    
+  </div>
+
+</div>
+
+<footer>
+  © 2024 Your Name. All rights reserved.
+</footer>
+
+</body>
+</html>
